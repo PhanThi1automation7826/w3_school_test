@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.s-mt-8 {
+    margin-top: 8px;
+}
+#main {
+
+}
+.text-white {
+    color: #fff !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float:  left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-3 {
+    width: calc(100%/ 3);
+}
+
+.col-2 {
+    width: 50%;
+}
+.col-1{
+    width: 100%;
+}
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header .search_but {
+    float: right;
+    color: white ;
+    line-height: 46px;
+    padding: 0 21px;
+    
+}
+#header .search_but:hover{
+background-color: red;
+cursor: pointer;
+}
+#header .menu-icon {
+    color: white;
+    position: absolute;
+    right: 0px;
+    padding: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+#header .menu-icon:hover{
+    color: black;
+    background-color: #ccc;
+}
+#nav{
+    display: inline-block;
+
+}
+
+#nav>li {
+    display: inline-block;
+cursor: pointer;
+position: relative;
+}
+
+#nav>li>a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+/* #nav .subnav >li:hover >a, */
+#nav li:hover >a{
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav, .subnav {
+    list-style: none;
+}
+
+#nav .subnav li{
+    /* display: block; */
+}
+
+#nav .subnav li> a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    line-height: 36px;
+    padding: 0 12px;
+    width: 100%;
+}
+
+
+
+#nav li:hover .subnav{
+    display: block; 
+}
+
+#slider {
+    margin-top: 46px;
+    background-color: orange;
+    padding-top: 50%;
+    background: url(/w3_theband/assets/img/slider/hinh-nen-anime-4k-1536x864.jpg) top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .text_content {
+    position: absolute;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    /* left: 0;
+    right: 0; */
+    width: 100%;
+    color: white;
+    bottom: 48px;
+    text-align: center;
+}
+
+#slider .text_description{
+     font-weight: 500;
+     font-size: 24px;
+}
+
+#slider p{ 
+     font-size: 15px;
+     margin-top: 25px;
+}
+
+#content {
+    height: 150vh;
+    background-color: grey;
+}
+
+#content .band {
+    
+}
+#content .band-content {
+    padding: 64px 16px;
+    text-align: center;
+    background-color: white;
+}
+.content-section {
+    text-align: center;
+    padding: 30px 0;
+}
+.section-heading {
+    margin: 10px 0;
+    font-weight: 500;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.section-slogan {
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 15px;
+}
+#content .band-text {
+    text-align: justify;
+    width: 60%;
+    margin: 0 20%;
+    font-size: 15px;
+    line-height: 1.6;
+}
+#content .team{
+    padding:  48px 0;
+    width: 70%;
+    margin: 16px 15% 32px;
+    
+}
+#content .clear{
+    clear:  both;
+}
+#content .member > p{
+    margin: 15px 0;
+}
+#content .member > img{
+    margin-bottom: 16px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#content .tour {
+    background-color: black;
+    padding-bottom: 150px;
+}
+#content .menu{
+    background-color: white;
+    list-style: none;
+}
+#content .menu li {
+    padding: 10px 16px;
+    border-bottom: 2px solid rgba(59, 53, 53, 0.5);
+}
+#content .menu .sold-out {
+    margin-left: 16px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    padding: 3px 8px;
+    background-color: red;
+}
+#content .menu .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50px;
+    margin-top: -3px;
+}
+#content .tour-content {
+    width: 60%;
+    margin: 0 20%;
+    background-color: black;
+}
+#content .places {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+#content .place img {
+    width: 100%;
+    display: block;
+    height: 200px;
+}
+#content .place img:hover {
+    opacity: 0.7;
+}
+#content .place .text {
+    background-color: white;
+    padding: 16px;
+    height: 250px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.text .b {
+    margin-top: 15px;
+}
+.text .date {
+    margin-top: 15px;
+    font-size: 20px;
+    color: gray;
+}
+.text .loveyou {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.text .link{
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.text .link:hover {
+    background-color: gray;
+    color:black !important;
+}
+
+.contact-content {
+    width: 60%;
+    margin: 0 20%;
+    min-height: 400px;
+}
+.contact .contact-cont {
+    margin-top: 48px;
+}
+#footer {
+
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open{
+    display: flex;
+}
+.modal-container {
+    background: white;
+    width: 900px;
+    max-width: calc(100%- 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+.modal-header {
+    background-color: teal;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    color: white;
+}
+
+.modal .header-icon {
+    margin-right: 16px;
+}
+.modal .modal-close {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.modal .modal-close:hover {
+    opacity: 0.7;
+}
+.modal .modal-body {
+    padding: 16px;
+
+
+}
+.modal-label {
+    display: block;
+    font-size: 15px;
+}
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+    margin-top: 12px;
+}
+.modal .buy-tickets{
+    border: none;
+    color:  white;
+    background-color: teal;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 18px;
+    cursor: pointer;
+}
+.modal .buy-tickets:hover{
+    opacity: 0.8;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+.modal-footer a{
+    color: rgb(0, 238, 255);
+}
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-150px);
+        opacity: 0.3;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.contact-cont {
+    line-height: 1.6;
+    font-size: 24px;
+}
+.contact-cont .form-control {
+    padding: 14px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.btn{
+    background-color: black;
+    padding: 12px 0;
+}
+.submitbtn {
+    border: none;
+    background: black;
+    color: white;
+    padding: 14px 20px;
+    font-size: 20px;
+    float: right;
+}
+.submitbtn:hover{
+    color:black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.contact-cont i{
+    width: 40px;
+    display: inline-block;
+    font-size: 30px;
+}
